@@ -1,0 +1,68 @@
+C++26 FEATURE PROBE V3.1
+======================
+
+ENV_BAT=
+CXX=C:\DESENV\gcc-15.3.0-mingw-w64ucrt-14.0\mingw64\bin/x86_64-w64-mingw32-g++.exe
+FLAGS=-std=c++26 -Wall -Wextra
+
+--- TOOLCHAIN FINGERPRINT ---
+> compiler --version
+x86_64-w64-mingw32-g++.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r1) 15.3.0
+Copyright (C) 2025 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+> compiler -dumpmachine
+x86_64-w64-mingw32
+> compiler -dumpfullversion
+15.3.0
+> resolved compiler
+C:\DESENV\gcc-15.3.0-mingw-w64ucrt-14.0\mingw64\bin\x86_64-w64-mingw32-g++.exe
+
+--- DEFAULT __cplusplus ---
+#define __cplusplus 201703L
+--- C++26 __cplusplus ---
+#define __cplusplus 202400L
+
+RESULT | EXPECTED | GROUP | TEST
+-------|----------|-------|--------------------------------------------
+SUPPORTED | SUPPORTED | language | 001_p2738r1_constexpr_void_ptr.cpp [OK]
+SUPPORTED | SUPPORTED | language | 002_p2741r3_static_assert_message.cpp [OK]
+SUPPORTED | SUPPORTED | language | 003_p2169r4_placeholder_variables.cpp [OK]
+SUPPORTED | SUPPORTED | language | 004_p2662r3_pack_indexing.cpp [OK]
+SUPPORTED | SUPPORTED | language | 005_p0609r3_structured_binding_attributes.cpp [OK]
+SUPPORTED | SUPPORTED | language | 006_p2573r2_deleted_reason.cpp [OK]
+SUPPORTED | SUPPORTED | language | 007_p2893r3_variadic_friends.cpp [OK]
+SUPPORTED | SUPPORTED | language | 008_p2747r2_constexpr_placement_new.cpp [OK]
+SUPPORTED | SUPPORTED | language | 009_p0963r3_structured_binding_condition.cpp [OK]
+SUPPORTED | SUPPORTED | language | 010_p3176r0_oxford_variadic_comma.cpp [OK]
+SUPPORTED | SUPPORTED | language | 011_p1967r14_embed.cpp [OK]
+SUPPORTED | SUPPORTED | language | 012_p2558r2_basic_charset.cpp [OK]
+UNSUPPORTED | UNSUPPORTED | language | 013_p1061r10_structured_binding_pack.cpp [OK]
+UNSUPPORTED | UNSUPPORTED | language | 014_p3068r5_constexpr_exceptions.cpp [OK]
+UNSUPPORTED | UNSUPPORTED | language | 015_p2900r14_contracts.cpp [OK]
+UNSUPPORTED | UNSUPPORTED | language | 016_p2996r13_reflection.cpp [OK]
+UNSUPPORTED | UNSUPPORTED | language | 017_p1306r5_expansion_statements.cpp [OK]
+UNSUPPORTED | UNSUPPORTED | language | 018_p3533r2_constexpr_virtual_inheritance.cpp [OK]
+UNSUPPORTED | UNSUPPORTED | language | 019_p3074r7_trivial_unions.cpp [OK]
+SUPPORTED | SUPPORTED | language | 020_p3144r2_delete_incomplete.cpp [OK]
+SUPPORTED | SUPPORTED | language | 021_p3247r2_trivial_types.cpp [OK]
+SUPPORTED | SUPPORTED | language | 022_p2865r5_array_comparisons.cpp [OK]
+SUPPORTED | SUPPORTED | library | 101_p2497r0_charconv_result_bool.cpp [OK]
+UNSUPPORTED | OBSERVE | library | 102_p1885r12_text_encoding.cpp [OBSERVED]
+SUPPORTED | SUPPORTED | library | 103_p2587r3_to_string_format.cpp [OK]
+SUPPORTED | SUPPORTED | library | 104_p2510r3_format_pointer.cpp [OK]
+SUPPORTED | SUPPORTED | library | 105_p2562r1_constexpr_stable_sort.cpp [OK]
+SUPPORTED | SUPPORTED | library | 106_p2637r3_variant_member_visit.cpp [OK]
+SUPPORTED | SUPPORTED | library | 107_p2637r3_format_arg_visit.cpp [OK]
+SUPPORTED | SUPPORTED | macros | 201_sd6_cplusplus.cpp [OK]
+SUPPORTED | SUPPORTED | macros | 202_gnu_libstdcxx_version.cpp [OK]
+
+SUMMARY
+Total...............: 31
+Supported...........: 23
+Unsupported.........: 8
+Runtime failures....: 0
+Expected matches....: 30
+Differences.........: 0
+Observational.......: 1

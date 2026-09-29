@@ -1,0 +1,7 @@
+src\library\102_p1885r12_text_encoding.cpp:14:4: error: #error "__cpp_lib_text_encoding not defined by this libstdc++ configuration"
+   14 | #  error "__cpp_lib_text_encoding not defined by this libstdc++ configuration"
+      |    ^~~~~
+src\library\102_p1885r12_text_encoding.cpp: In function 'int main()':
+src\library\102_p1885r12_text_encoding.cpp:19:26: error: 'std::text_encoding' has not been declared
+   19 |     auto encoding = std::text_encoding::environment();
+      |                          ^~~~~~~~~~~~~

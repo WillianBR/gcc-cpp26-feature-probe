@@ -1,0 +1,19 @@
+src\language\013_p1061r10_structured_binding_pack.cpp: In function 'void f(T)':
+src\language\013_p1061r10_structured_binding_pack.cpp:16:17: error: expected identifier before '...' token [-Wtemplate-body]
+   16 |     auto [head, ...tail] = t;
+      |                 ^~~
+src\language\013_p1061r10_structured_binding_pack.cpp:16:16: error: expected ']' before '...' token [-Wtemplate-body]
+   16 |     auto [head, ...tail] = t;
+      |                ^~~~
+      |                ]
+src\language\013_p1061r10_structured_binding_pack.cpp:18:21: error: 'tail' has not been declared [-Wtemplate-body]
+   18 |     (void)sizeof...(tail);
+      |                     ^~~~
+src\language\013_p1061r10_structured_binding_pack.cpp: In instantiation of 'void f(T) [with T = std::tuple<int, int, int>]':
+src\language\013_p1061r10_structured_binding_pack.cpp:23:6:   required from here
+   23 |     f(std::tuple{1, 2, 3});
+      |     ~^~~~~~~~~~~~~~~~~~~~~
+src\language\013_p1061r10_structured_binding_pack.cpp:16:10: error: only 1 name provided for structured binding
+   16 |     auto [head, ...tail] = t;
+      |          ^
+src\language\013_p1061r10_structured_binding_pack.cpp:16:10: note: while 'std::tuple<int, int, int>' decomposes into 3 elements

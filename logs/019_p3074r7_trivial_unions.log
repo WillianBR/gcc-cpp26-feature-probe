@@ -1,0 +1,3 @@
+src\language\019_p3074r7_trivial_unions.cpp:12:4: error: #error "__cpp_trivial_union missing"
+   12 | #  error "__cpp_trivial_union missing"
+      |    ^~~~~

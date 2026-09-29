@@ -1,0 +1,7 @@
+src\language\015_p2900r14_contracts.cpp:12:5: error: expected initializer before 'pre'
+   12 |     pre(x > 0)
+      |     ^~~
+src\language\015_p2900r14_contracts.cpp: In function 'int main()':
+src\language\015_p2900r14_contracts.cpp:20:12: error: 'f' was not declared in this scope
+   20 |     return f(1) - 1;
+      |            ^

@@ -1,0 +1,4 @@
+src\language\017_p1306r5_expansion_statements.cpp: In function 'int main()':
+src\language\017_p1306r5_expansion_statements.cpp:17:5: error: expected primary-expression before 'template'
+   17 |     template for (auto x : t)
+      |     ^~~~~~~~

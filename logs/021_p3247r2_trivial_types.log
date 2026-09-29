@@ -1,0 +1,7 @@
+src\language\021_p3247r2_trivial_types.cpp:18:20: warning: 'std::is_trivial_v<X>' is deprecated: use 'is_trivially_default_constructible_v && is_trivially_copyable_v' instead [-Wdeprecated-declarations]
+   18 | static_assert(std::is_trivial_v<X>);
+      |                    ^~~~~~~~~~~~~~~
+In file included from src\language\021_p3247r2_trivial_types.cpp:11:
+C:/DESENV/gcc-15.3.0-mingw-w64ucrt-14.0/mingw64/include/c++/15.3.0/type_traits:3532:25: note: declared here
+ 3532 |   inline constexpr bool is_trivial_v = __is_trivial(_Tp);
+      |                         ^~~~~~~~~~~~

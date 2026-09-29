@@ -1,0 +1,16 @@
+src\language\018_p3533r2_constexpr_virtual_inheritance.cpp:30:19: error: non-constant condition for static assertion
+   30 | static_assert(g() == 26);
+      |               ~~~~^~~~~
+src\language\018_p3533r2_constexpr_virtual_inheritance.cpp:30:16: error: 'constexpr int g()' called in a constant expression
+   30 | static_assert(g() == 26);
+      |               ~^~
+src\language\018_p3533r2_constexpr_virtual_inheritance.cpp:24:15: note: 'constexpr int g()' is not usable as a 'constexpr' function because:
+   24 | constexpr int g()
+      |               ^
+src\language\018_p3533r2_constexpr_virtual_inheritance.cpp:26:7: error: call to non-'constexpr' function 'B::B()'
+   26 |     B b;
+      |       ^
+src\language\018_p3533r2_constexpr_virtual_inheritance.cpp:16:8: note: 'B::B()' is not usable as a 'constexpr' function because:
+   16 | struct B : virtual A
+      |        ^
+src\language\018_p3533r2_constexpr_virtual_inheritance.cpp:16:8: error: 'struct B' has virtual base classes

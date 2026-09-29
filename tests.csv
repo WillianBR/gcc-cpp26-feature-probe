@@ -1,0 +1,32 @@
+id,group,paper,feature,min_gcc,macro,macro_min,expected_gcc15,extra_flags,file
+001,language,P2738R1,constexpr cast from void*,14,__cpp_constexpr,202306L,SUPPORTED,,001_p2738r1_constexpr_void_ptr.cpp
+002,language,P2741R3,user-generated static_assert messages,14,__cpp_static_assert,202306L,SUPPORTED,,002_p2741r3_static_assert_message.cpp
+003,language,P2169R4,placeholder variables with no name,14,__cpp_placeholder_variables,202306L,SUPPORTED,,003_p2169r4_placeholder_variables.cpp
+004,language,P2662R3,pack indexing,15,__cpp_pack_indexing,202311L,SUPPORTED,,004_p2662r3_pack_indexing.cpp
+005,language,P0609R3,attributes for structured bindings,15,__cpp_structured_bindings,202403L,SUPPORTED,,005_p0609r3_structured_binding_attributes.cpp
+006,language,P2573R2,"= delete(""reason"")",15,__cpp_deleted_function,202403L,SUPPORTED,,006_p2573r2_deleted_reason.cpp
+007,language,P2893R3,variadic friends,15,__cpp_variadic_friend,202403L,SUPPORTED,,007_p2893r3_variadic_friends.cpp
+008,language,P2747R2,constexpr placement new,15,__cpp_constexpr,202406L,SUPPORTED,,008_p2747r2_constexpr_placement_new.cpp
+009,language,P0963R3,structured binding declaration as condition,15,-,-,SUPPORTED,,009_p0963r3_structured_binding_condition.cpp
+010,language,P3176R0,Oxford variadic comma,15,-,-,SUPPORTED,,010_p3176r0_oxford_variadic_comma.cpp
+011,language,P1967R14,#embed,15,__cpp_pp_embed,202502L,SUPPORTED,,011_p1967r14_embed.cpp
+012,language,P2558R2,"@, $, and ` in basic character set",15,-,-,SUPPORTED,,012_p2558r2_basic_charset.cpp
+013,language,P1061R10,structured bindings introduce a pack,16,__cpp_structured_bindings,202411L,UNSUPPORTED,,013_p1061r10_structured_binding_pack.cpp
+014,language,P3068R5,constexpr exceptions,16,__cpp_constexpr_exceptions,202411L,UNSUPPORTED,,014_p3068r5_constexpr_exceptions.cpp
+015,language,P2900R14,contracts,16,__cpp_contracts,202502L,UNSUPPORTED,,015_p2900r14_contracts.cpp
+016,language,P2996R13,reflection,16,__cpp_impl_reflection,202506L,UNSUPPORTED,-freflection,016_p2996r13_reflection.cpp
+017,language,P1306R5,expansion statements,16,__cpp_expansion_statements,202506L,UNSUPPORTED,,017_p1306r5_expansion_statements.cpp
+018,language,P3533R2,constexpr virtual inheritance,16,__cpp_constexpr_virtual_inheritance,202506L,UNSUPPORTED,,018_p3533r2_constexpr_virtual_inheritance.cpp
+019,language,P3074R7,trivial unions,17,__cpp_trivial_union,202502L,UNSUPPORTED,,019_p3074r7_trivial_unions.cpp
+020,language,P3144R2,deleting pointer to incomplete type is ill-formed,15,-,-,SUPPORTED,,020_p3144r2_delete_incomplete.cpp
+021,language,P3247R2,deprecating notion of trivial types,15,-,-,SUPPORTED,,021_p3247r2_trivial_types.cpp
+022,language,P2865R5,removing deprecated array comparisons,15,-,-,SUPPORTED,,022_p2865r5_array_comparisons.cpp
+101,library,P2497R0,test success/failure of charconv functions,14,-,-,SUPPORTED,,101_p2497r0_charconv_result_bool.cpp
+102,library,P1885R12,std::text_encoding,14,__cpp_lib_text_encoding,-,OBSERVE,,102_p1885r12_text_encoding.cpp
+103,library,P2587R3,arithmetic std::to_string changes,14,-,-,SUPPORTED,,103_p2587r3_to_string_format.cpp
+104,library,P2510R3,formatting pointers,14,-,-,SUPPORTED,,104_p2510r3_format_pointer.cpp
+105,library,P2562R1,constexpr stable sorting,15,-,-,SUPPORTED,,105_p2562r1_constexpr_stable_sort.cpp
+106,library,P2637R3,std::variant::visit member,15,-,-,SUPPORTED,,106_p2637r3_variant_member_visit.cpp
+107,library,P2637R3,basic_format_arg::visit member,15,-,-,SUPPORTED,,107_p2637r3_format_arg_visit.cpp
+201,macros,SD6,__cplusplus in C++26 mode,14,-,-,SUPPORTED,,201_sd6_cplusplus.cpp
+202,macros,GNU,libstdc++ release/date macros,0,-,-,SUPPORTED,,202_gnu_libstdcxx_version.cpp

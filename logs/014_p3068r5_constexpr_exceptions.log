@@ -1,0 +1,12 @@
+src\language\014_p3068r5_constexpr_exceptions.cpp:23:19: error: non-constant condition for static assertion
+   23 | static_assert(f() == 26);
+      |               ~~~~^~~~~
+src\language\014_p3068r5_constexpr_exceptions.cpp:23:16: error: 'constexpr int f()' called in a constant expression
+   23 | static_assert(f() == 26);
+      |               ~^~
+src\language\014_p3068r5_constexpr_exceptions.cpp:11:15: note: 'constexpr int f()' is not usable as a 'constexpr' function because:
+   11 | constexpr int f()
+      |               ^
+src\language\014_p3068r5_constexpr_exceptions.cpp:15:9: error: expression '<throw-expression>' is not a constant expression
+   15 |         throw 26;
+      |         ^~~~~~~~

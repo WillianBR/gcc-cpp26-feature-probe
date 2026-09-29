@@ -1,0 +1,130 @@
+
+C:\DESENV\gcc-15.3.0-mingw-w64ucrt-14.0\mingw64\cpp26-feature-probe-v3.1.1>mingw32-make
+============================================================
+C++26 FEATURE PROBE V3.1 - cmd.exe
+============================================================
+
+==================== language ====================
+[1] 001_p2738r1_constexpr_void_ptr.cpp
+    expected GCC15: SUPPORTED
+    macro: __cpp_constexpr >= 202306L
+    compile/runtime: SUPPORTED
+[2] 002_p2741r3_static_assert_message.cpp
+    expected GCC15: SUPPORTED
+    macro: __cpp_static_assert >= 202306L
+    compile/runtime: SUPPORTED
+[3] 003_p2169r4_placeholder_variables.cpp
+    expected GCC15: SUPPORTED
+    macro: __cpp_placeholder_variables >= 202306L
+    compile/runtime: SUPPORTED
+[4] 004_p2662r3_pack_indexing.cpp
+    expected GCC15: SUPPORTED
+    macro: __cpp_pack_indexing >= 202311L
+    compile/runtime: SUPPORTED
+[5] 005_p0609r3_structured_binding_attributes.cpp
+    expected GCC15: SUPPORTED
+    macro: __cpp_structured_bindings >= 202403L
+    compile/runtime: SUPPORTED
+[6] 006_p2573r2_deleted_reason.cpp
+    expected GCC15: SUPPORTED
+    macro: __cpp_deleted_function >= 202403L
+    compile/runtime: SUPPORTED
+[7] 007_p2893r3_variadic_friends.cpp
+    expected GCC15: SUPPORTED
+    macro: __cpp_variadic_friend >= 202403L
+    compile/runtime: SUPPORTED
+[8] 008_p2747r2_constexpr_placement_new.cpp
+    expected GCC15: SUPPORTED
+    macro: __cpp_constexpr >= 202406L
+    compile/runtime: SUPPORTED
+[9] 009_p0963r3_structured_binding_condition.cpp
+    expected GCC15: SUPPORTED
+    compile/runtime: SUPPORTED
+[10] 010_p3176r0_oxford_variadic_comma.cpp
+    expected GCC15: SUPPORTED
+    compile/runtime: SUPPORTED
+[11] 011_p1967r14_embed.cpp
+    expected GCC15: SUPPORTED
+    macro: __cpp_pp_embed >= 202502L
+    compile/runtime: SUPPORTED
+[12] 012_p2558r2_basic_charset.cpp
+    expected GCC15: SUPPORTED
+    compile/runtime: SUPPORTED
+[13] 013_p1061r10_structured_binding_pack.cpp
+    expected GCC15: UNSUPPORTED
+    macro: __cpp_structured_bindings >= 202411L
+    compile: UNSUPPORTED
+[14] 014_p3068r5_constexpr_exceptions.cpp
+    expected GCC15: UNSUPPORTED
+    macro: __cpp_constexpr_exceptions >= 202411L
+    compile: UNSUPPORTED
+[15] 015_p2900r14_contracts.cpp
+    expected GCC15: UNSUPPORTED
+    macro: __cpp_contracts >= 202502L
+    compile: UNSUPPORTED
+[16] 016_p2996r13_reflection.cpp
+    expected GCC15: UNSUPPORTED
+    macro: __cpp_impl_reflection >= 202506L
+    compile: UNSUPPORTED
+[17] 017_p1306r5_expansion_statements.cpp
+    expected GCC15: UNSUPPORTED
+    macro: __cpp_expansion_statements >= 202506L
+    compile: UNSUPPORTED
+[18] 018_p3533r2_constexpr_virtual_inheritance.cpp
+    expected GCC15: UNSUPPORTED
+    macro: __cpp_constexpr_virtual_inheritance >= 202506L
+    compile: UNSUPPORTED
+[19] 019_p3074r7_trivial_unions.cpp
+    expected GCC15: UNSUPPORTED
+    macro: __cpp_trivial_union >= 202502L
+    compile: UNSUPPORTED
+[20] 020_p3144r2_delete_incomplete.cpp
+    expected GCC15: SUPPORTED
+    compile/runtime: SUPPORTED
+[21] 021_p3247r2_trivial_types.cpp
+    expected GCC15: SUPPORTED
+    compile/runtime: SUPPORTED
+[22] 022_p2865r5_array_comparisons.cpp
+    expected GCC15: SUPPORTED
+    compile/runtime: SUPPORTED
+
+==================== library ====================
+[23] 101_p2497r0_charconv_result_bool.cpp
+    expected GCC15: SUPPORTED
+    compile/runtime: SUPPORTED
+[24] 102_p1885r12_text_encoding.cpp
+    expected GCC15: OBSERVE
+    macro: __cpp_lib_text_encoding >= -
+    compile: UNSUPPORTED
+[25] 103_p2587r3_to_string_format.cpp
+    expected GCC15: SUPPORTED
+    compile/runtime: SUPPORTED
+[26] 104_p2510r3_format_pointer.cpp
+    expected GCC15: SUPPORTED
+    compile/runtime: SUPPORTED
+[27] 105_p2562r1_constexpr_stable_sort.cpp
+    expected GCC15: SUPPORTED
+    compile/runtime: SUPPORTED
+[28] 106_p2637r3_variant_member_visit.cpp
+    expected GCC15: SUPPORTED
+    compile/runtime: SUPPORTED
+[29] 107_p2637r3_format_arg_visit.cpp
+    expected GCC15: SUPPORTED
+    compile/runtime: SUPPORTED
+
+==================== macros ====================
+[30] 201_sd6_cplusplus.cpp
+    expected GCC15: SUPPORTED
+    compile/runtime: SUPPORTED
+[31] 202_gnu_libstdcxx_version.cpp
+    expected GCC15: SUPPORTED
+    compile/runtime: SUPPORTED
+
+============================================================
+Total 31  Supported 23  Unsupported 8
+RuntimeFail 0  Expected matches 30  Differences 0
+Observational 1
+============================================================
+report.txt          - summary
+feature-macros.txt  - SD-6 macros exposed by compiler/library
+logs\*.log          - diagnostics per probe
