@@ -5,8 +5,8 @@ como ambiente de execução de primeira classe.
 
 ## English & Português BR
 
-English version: [README_ENG.md](README_ENG.md)
-Versão em Português: [README.md](README.md)
+- English version: [README_ENG.md](README_ENG.md)
+- Versão em Português: [README.md](README.md)
 
 ## Toolchain da baseline GCC 15.3.0 / MinGW-w64 UCRT
 
